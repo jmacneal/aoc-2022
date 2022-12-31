@@ -96,9 +96,9 @@
 
 (triplicates "A1234", "0987Amnl", "zxvcA")
 
-(def q1-solution
+(def q2-solution
   (->> input (partition 3) (map (partial apply triplicates)) (map priority) (reduce +)))
 
-q1-solution
+q2-solution
 
 ;; Your puzzle answer was 2821.
